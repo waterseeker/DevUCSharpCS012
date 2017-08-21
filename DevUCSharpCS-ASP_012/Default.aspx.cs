@@ -21,7 +21,7 @@ namespace DevUCSharpCS_ASP_012
 
         protected void okButton_Click(object sender, EventArgs e)
         {
-            resultLabel.Text = (firstTextBox.Text == secondTextBox.Text) ? "Yes" : "No";
+            resultLabel.Text = (firstTextBox.Text == secondTextBox.Text) ? "Yes, they're equivalent." : "No, they're not equivalent.";
         }
     }
 }
