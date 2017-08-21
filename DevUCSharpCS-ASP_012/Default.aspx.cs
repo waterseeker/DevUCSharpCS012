@@ -22,9 +22,16 @@ namespace DevUCSharpCS_ASP_012
         protected void okButton_Click(object sender, EventArgs e)
         {
             // resultLabel.Text = (firstTextBox.Text == secondTextBox.Text) ? "Yes, they're equivalent." : "No, they're not equivalent.";
-            resultLabel.Text = (oldCheckBox.Checked) ?
-            "I'm teaching an old dog new tricks!" :
-            "Young whippershapper! Get off my lawn!";
+
+
+            //resultLabel.Text = (oldCheckBox.Checked) ?
+            //"I'm teaching an old dog new tricks!" :
+            //"Young whippershapper! Get off my lawn!";
+
+
+            int result = (firstTextBox.Text == secondTextBox.Text) ? 100 : 50;
+
+            resultLabel.Text = result.ToString();
         }
     }
 }
